@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC</title>
+</head>
+<body>
+    <p class="json-stringify"></p>
+    <p class="json-parse"></p>
+    <script>
+        
+        /* POC 1: JSON Stringify ------------------------------------ */
+        const obj = {
+            name: "Caroline",
+            age: 27,
+            student: true
+        };
+
+        const newString = JSON.stringify(obj);
+        document.querySelector(".json-stringify").innerHTML = newString;
+        console.log(typeof newString);
+
+        /* POC 2: JSON Parse -----------------------------------------*/
+
+        const newObj = JSON.parse(newString);
+        document.querySelector(".json-parse").innerHTML = newObj;
+        console.log("Novo objeto: ", newObj);
+        console.log(typeof newObj);
+
+    </script>
+</body>
+</html>
