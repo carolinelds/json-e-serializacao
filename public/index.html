@@ -7,11 +7,16 @@
     <title>POC</title>
 </head>
 <body>
-    <p class="json-stringify"></p>
-    <p class="json-parse"></p>
+    <h2>POC 1: JSON Stringify</h1>
+    <p class="poc-1"></p>
+    <h2>POC 2: JSON Parse</h1>
+    <p class="poc-2"></p>
+    <h2>POC 3: JSON Stringify of a function</h1>
+    <p class="poc-3"></p>
     <script>
         
         /* POC 1: JSON Stringify ------------------------------------ */
+        
         const obj = {
             name: "Caroline",
             age: 27,
@@ -19,15 +24,28 @@
         };
 
         const newString = JSON.stringify(obj);
-        document.querySelector(".json-stringify").innerHTML = newString;
+        document.querySelector(".poc-1").innerHTML = newString;
         console.log(typeof newString);
 
         /* POC 2: JSON Parse -----------------------------------------*/
 
         const newObj = JSON.parse(newString);
-        document.querySelector(".json-parse").innerHTML = newObj;
+        document.querySelector(".poc-2").innerHTML = newObj;
         console.log("Novo objeto: ", newObj);
         console.log(typeof newObj);
+
+        /* POC 3: JSON Stringify of a function -----------------------*/
+        
+        const obj3 = {
+            name: "Carol",
+            age: function () {return 30;},
+            city: "Santa Maria"
+        };
+
+        const newString3 = JSON.stringify(obj3);
+        document.querySelector(".poc-3").innerHTML = newString3;
+        console.log(typeof newString3);
+    
 
     </script>
 </body>
