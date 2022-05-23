@@ -60,11 +60,27 @@ Também pode-se utilizar sites que fazem essa conversão, como por exemplo esse:
 
 ## 6. O que é YAML? Como serializamos um objeto JS em YAML?
 
+YAML significa "YAML Ain't Markup Language" e foi criada para serializar dados, da mesma forma que o XML, com algumas diferenças. Sua estrutura é baseada em identação e, por isso, entre outros motivos, pode ser considerada mais legível para humanos que o JSON e o XML.
+
+Não existe uma função nativa para serializar um objeto JS em YAML. Podemos utilizar bibliotecas de terceiros, como é o caso dessa: https://github.com/eemeli/yaml
+
+Também pode-se utilizar sites que fazem essa conversão, como por exemplo esse: http://www.json2yaml.com/
 
 ## 7. Compare um objeto serializado em JSON, XML e YAML (lado a lado).
+
+Da esquerda para a direita, um objeto em JSON, XML e YAML, respectivamente:
+
+![image](https://user-images.githubusercontent.com/25704982/169873994-a84b3d46-7b77-4044-b3c7-5bd1c06eb1c1.png)
+
 
 ### Referências
 
 W3Schools. **JSON Syntax**. Disponível em: < https://www.w3schools.com/js/js_json_syntax.asp >. Acesso em: 23 mai. 2022.
+
 W3Schools. **JSON Stringify**. Disponível em: < https://www.w3schools.com/js/js_json_stringify.asp >. Acesso em: 23 mai. 2022.
+
 W3Schools. **XML Tutorial**. Disponível em: < https://www.w3schools.com/xml/default.asp >. Acesso em: 23 mai. 2022.
+
+Treinaweb. **O que é YAML?**. Disponível em: < https://www.treinaweb.com.br/blog/o-que-e-yaml >. Acesso em: 23 mai. 2022.
+
+StackOverflow. **How to convert JSON to YAML in JavaScript?**. Diposnível em : < https://stackoverflow.com/questions/38781929/how-to-convert-json-to-yaml-in-javascript >. Acesso em: 23 mai. 2022.
